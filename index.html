@@ -1,68 +1,179 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-   "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>J.Weir Github</title>
-	<meta name="author" content="John Weir">
-	<!-- Date: 2010-02-12 -->
-	<style type="text/css" media="screen">
-	 
-	 body {
-	   background: #EEEEEF;
-	   font: 14px arial, san-serif;
- 	   line-height: 18px;
- 	   text-shadow: #FFF 0px 0px 2px;
- 	   margin: 40px;
- 	   width: 400px;
-	 }
-	 
-	 h1 {
-	   font-size: 18px;
-	 }
-	 
-	 a {
-	   text-decoration: none;
-	   color: #600;
-	 }
-	 
-	 a:hover {
-	   text-decoration: underline;
-	 }
-	</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>J.Weir Github</title>
+<meta name="author" content="John Weir">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,300' rel='stylesheet' type='text/css'>
+<style type="text/css" media="screen">
+
+hr {
+  border: none;
+  height: 1px;
+  font-size: 0px;
+  background: #CCC;
+  margin: 36px 0 9px 0;
+}
+body {
+  background: #EEE;
+  font: 13px 'open sans', arial, san-serif;
+  line-height: 18px;
+  margin: 40px;
+  )
+}
+
+h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.repos {
+  margin: 18px 0;
+}
+a {
+  text-decoration: none;
+  color: #2244AA;
+}
+
+a:hover {
+  text-decoration: underline;
+  }
+
+  .repo {
+    display: inline-block;
+    width: 23%;
+    min-height: 140px;
+    margin: 1% 1% 1% 0;
+    background: #EEE;
+    border-top: 1px #222 solid;
+    vertical-align: top;
+    padding: 18px 0;
+    position: relative;
+  }
+
+  .repo h1, .repo p {
+    margin: 0 0 18px;
+  }
+
+  .repo h1 {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .repo .lang {
+    background: #EEE;
+    color: #222;
+    padding: 1px 6px;
+    border-radius: 5px;
+    border: 1px #222 solid;
+    font-size: 10px;
+    position: absolute;
+    right: 9px;
+    top: -12px;
+  }
+
+  p.follow {
+    border-top: 1px #CCC solid;
+    margin-top: 36px;
+    padding-top: 9px;
+  }
+
+  @media all and (max-width: 699px) {
+    .repo {
+      width: 100%;
+      margin: 9px 0;
+      min-height: auto;
+    }
+  }
+</style>
 </head>
 <body>
-  <h1>J. Weir's Github projects</h1>
-  <br/><br/>
-  <h1><a href="http://github.com/jweir/Bluemold">Bluemold</a></h1>
-  <p>HTML templates for Node.js based on jQuery Template syntax</p>
+<h1>selection of software projects</h1>
+<div class="repos">
+  <div class='repo'>
+    <h1><a href="http://github.com/jweir/espubsub">ESPubSub</a></h1>
+    <div class='lang'>go, redis</div>
+    <p>A simple Pub/Sub server which streams data to a browser via EventSource</p>
+  </div>
 
-  <h1><a href="http://jweir.github.com/Super-Dumb-Player">Super Dumb Player</a></h1>
-  <p>A video player using Flash to display the video, but totally, like, customizable UI created in HTML and Javascript.</p>
-  
-  <h1><a href="http://jweir.github.com/colorwheel">Colorwheel</a></h1>
-  <p>A color picker for web browsers based on Raphael</p>
-  
-  <h1><a href="http://jweir.github.com/namespace">Namespace</a></h1>
-  <p>An Erlang inspired method of namespacing Javascript functions</p>
-  
-  <h1><a href="http://github.com/jweir/laminate">Laminate</a> (retired)</h1>
-  <p>Safe HTML templates for Ruby.  Uses the Lua programming language to code the templates.</p>
-  
-  <script type="text/javascript">
+  <div class='repo'>
+    <h1><a href="http://github.com/jweir/ScaleDown">ScaleDown</a></h1>
+    <div class='lang'>ruby</div>
+    <p>On demand image scaling server</p>
+  </div>
 
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-605430-4']);
-    _gaq.push(['_trackPageview']);
+  <div class='repo'>
+    <h1><a href="http://jweir.github.com/colorwheel">Colorwheel</a></h1>
+    <div class='lang'>javascript</div>
+    <p>A color picker for web browsers based on Raphael</p>
+  </div>
 
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
-    })();
+  <div class='repo'>
+    <h1><a href="http://jweir.github.com/namespace">Namespace</a></h1>
+    <div class='lang'>javascript</div>
+    <p>An Erlang inspired method of namespacing Javascript functions</p>
+  </div>
 
-  </script>
+  <div class='repo'>
+    <h1><a href="http://github.com/jweir/Bluemold">Bluemold</a></h1>
+    <div class='lang'>node.js, pegjs</div>
+    <p>HTML templates for Node.js based on jQuery Template syntax</p>
+  </div>
+
+  <div class='repo'>
+    <h1><a href="http://github.com/jweir/Sound-of-Traffic">Sound of Traffic</a></h1>
+    <div class='lang'>java</div>
+    <p>Application which <em>sonifys</em> network traffic</p>
+    <p>requires tcpdump</p>
+  </div>
+
+  <div class='repo'>
+    <h1><a href="http://jweir.github.com/Super-Dumb-Player">Super Dumb Player</a></h1>
+    <div class='lang'>flash</div>
+    <p>A video player using Flash to display the video, but totally, like, customizable UI created in HTML and Javascript</p>
+  </div>
+
+  <div class='repo'>
+    <h1><a href="http://github.com/jweir/laminate">Laminate</a> (retired)</h1>
+    <div class='lang'>lua, ruby</div>
+    <p>Safe HTML templates for Ruby.  Uses the Lua programming language to code the templates</p>
+  </div>
+
+  <h1>elsewhere</h1>
+  <b><a href="http://framedriver.com">Fame Driver</a></b> an artist portfolio and look book hosting service</br>
+  <br/>
+  <a href="http://smokinggun.com/cover.php">A bit about my work</a></br>
+  <a href="http://smokinggun.com/projects/">Design archive</a> of pre 2006 projects.</br>
+  <a href="http://smokinggun.com/code/">Ancient javascript code</a> (as in from 2000 to 2001)
+  
+  <p class="follow">
+  I am John Weir<br/>
+  Follow me on <b><a href="#" onclick="f()">the street</a>, <a href="#" onclick="f()">the subway</a> or at the <a href="#" onclick="f()">grocery store</a></b></p>
+
+</div>
+
+<script type="text/javascript">
+
+var ss = ['That would be weird.', 'No, really why are you following me?', 'Don\'t you have something better to do?', 'I guess not.'];
+function f(){
+  if (ss.length == 0){
+    document.location.href = "http://google.com?q=stalker"
+    return;
+  }
+  alert(ss.shift());
+  return false;
+}
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-605430-4']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+
+</script>
 
 </body>
 </html>
