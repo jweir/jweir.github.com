@@ -9,8 +9,7 @@
 <style type="text/css" media="screen">
 
 body {
-  background: #EEE;
-
+  background: #FFF;
   font: 13px 'open sans', arial, san-serif;
   line-height: 18px;
   margin: 40px;
@@ -27,7 +26,7 @@ h1 {
 }
 a {
   text-decoration: none;
-  color: #2244AA;
+  color: #da5c00;
 }
 
 a:hover {
@@ -71,7 +70,15 @@ a:hover {
     padding-top: 9px;
   }
 
-  @media all and (max-width: 699px) {
+  @media all and (max-width: 800px) {
+    .repo {
+      width: 49%;
+      margin: 9px 0;
+      min-height: auto;
+    }
+  }
+
+  @media all and (max-width: 600px) {
     .repo {
       width: 100%;
       margin: 9px 0;
@@ -116,7 +123,7 @@ a:hover {
   <div class='repo'>
     <h1><a href="http://github.com/jweir/Sound-of-Traffic">Sound of Traffic</a></h1>
     <div class='lang'>java</div>
-    <p>Application which <em>sonifys</em> network traffic</p>
+    <p>Application which <em>sonifies</em> network traffic</p>
     <p>requires tcpdump</p>
   </div>
 
@@ -140,8 +147,9 @@ a:hover {
   <a href="http://smokinggun.com/code/">Ancient javascript code</a> (as in from 2000 to 2001)
   
   <p class="follow">
-  I am John Weir<br/>
-  Follow me on <b><a href="#" onclick="f()">the street</a>, <a href="#" onclick="f()">the subway</a> or at the <a href="#" onclick="f()">grocery store</a></b></p>
+  Follow me on <a href="#" onclick="f()">the street</a>, <a href="#" onclick="f()">the subway</a> or at the <a href="#" onclick="f()">grocery store</a><br/>
+  – John Weir
+  </p>
 
 </div>
 
